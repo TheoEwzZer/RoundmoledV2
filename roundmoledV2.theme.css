@@ -21,6 +21,21 @@
   --dark-bright: #0b0b0b;
   --roundmoled-background: #142339;
   --popout-activeborders: #1f1f1f;
+  --background-tertiary: #2a2b2f;
+  --background-secondary: #18191d; /* guild folder border background */
+  --background-secondary-alt: var(--dark-primary); /* change it and see for yourself */
+  --background-primary: var(
+    --dark-primary
+  ); /* primary background color, full amoled black  */
+  --channeltextarea-background: #070b10; /* color of your chat bar */
+  --background-accent: var(--brand-experiment); /* discords accent color (default) */
+  --background-message-hover: transparent;
+  --background-modifier-hover: #36559138;
+  --background-modifier-active: #36559138;
+  --background-modifier-selected: #406abb38;
+  --background-floating: var(--dark-primary); /* userpopout background */
+  --scrollbar-auto-track: #0d0d0d;
+  --scrollbar-thin-thumb: var(--brand-experiment);
 }
 
 .theme-dark .themed_fc4f04 {
@@ -1975,6 +1990,10 @@ button.gm-spotify-controls-button {
   background-color: var(--dark-secondary);
 }
 
+.circleIconButton_db6521 {
+  background-color: var(--background-secondary);
+}
+
 /****************************************************************************************
 
 ██████╗ ██╗███████╗ ██████╗ ██████╗ ██████╗ ██████╗     ██╗   ██╗ █████╗ ██████╗ ███████╗
@@ -1986,24 +2005,6 @@ button.gm-spotify-controls-button {
 dcvarsp
 
 ****************************************************************************************/
-
-:root.theme-dark {
-  --background-tertiary: #2a2b2f;
-  --background-secondary: #18191d; /* guild folder border background */
-  --background-secondary-alt: var(--dark-primary); /* change it and see for yourself */
-  --background-primary: var(
-    --dark-primary
-  ); /* primary background color, full amoled black  */
-  --channeltextarea-background: #070b10; /* color of your chat bar */
-  --background-accent: var(--brand-experiment); /* discords accent color (default) */
-  --background-message-hover: transparent;
-  --background-modifier-hover: #36559138;
-  --background-modifier-active: #36559138;
-  --background-modifier-selected: #406abb38;
-  --background-floating: var(--dark-primary); /* userpopout background */
-  --scrollbar-auto-track: #0d0d0d;
-  --scrollbar-thin-thumb: var(--brand-experiment);
-}
 
 /*                                Optional stuff ( delete the /⃰ ⃰/ on top and below the import to enable them)                     */
 
