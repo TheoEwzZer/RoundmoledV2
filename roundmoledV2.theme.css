@@ -5,7 +5,7 @@
 * @source https://github.com/TheoEwzZer/RoundmoledV2
 * @updateUrl https://raw.githubusercontent.com/TheoEwzZer/RoundmoledV2/main/roundmoledV2.theme.css
 * @authorId 384009727253807105
-* @version 1.2
+* @version 1.3
 */
 
 /*  imports */
@@ -1997,7 +1997,6 @@ dcvarsp
   --background-modifier-active: #36559138;
   --background-modifier-selected: #406abb38;
   --background-floating: var(--dark-primary); /* userpopout background */
-  --scrollbar-auto-thumb: var(--brand-experiment);
   --scrollbar-auto-track: #0d0d0d;
   --scrollbar-thin-thumb: var(--brand-experiment);
 }
