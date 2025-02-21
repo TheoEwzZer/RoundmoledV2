@@ -5,7 +5,7 @@
 * @source https://github.com/TheoEwzZer/RoundmoledV2
 * @updateUrl https://raw.githubusercontent.com/TheoEwzZer/RoundmoledV2/main/roundmoledV2.theme.css
 * @authorId 384009727253807105
-* @version 1.3
+* @version 1.3.1
 */
 
 /*  imports */
@@ -23,12 +23,16 @@
   --popout-activeborders: #1f1f1f;
   --background-tertiary: #2a2b2f;
   --background-secondary: #18191d; /* guild folder border background */
-  --background-secondary-alt: var(--dark-primary); /* change it and see for yourself */
+  --background-secondary-alt: var(
+    --dark-primary
+  ); /* change it and see for yourself */
   --background-primary: var(
     --dark-primary
   ); /* primary background color, full amoled black  */
   --channeltextarea-background: #070b10; /* color of your chat bar */
-  --background-accent: var(--brand-experiment); /* discords accent color (default) */
+  --background-accent: var(
+    --brand-experiment
+  ); /* discords accent color (default) */
   --background-message-hover: transparent;
   --background-modifier-hover: #36559138;
   --background-modifier-active: #36559138;
@@ -36,13 +40,30 @@
   --background-floating: var(--dark-primary); /* userpopout background */
   --scrollbar-auto-track: #0d0d0d;
   --scrollbar-thin-thumb: var(--brand-experiment);
+  --autocomplete-bg: #000000;
+}
+
+.theme-dark .container__2637a,
+.members_c8ffbb,
+.member_c8ffbb,
+.container_c8ffbb {
+  background-color: var(--dark-primary);
+}
+
+.footer__214dc {
+  background-color: var(--dark-primary);
+}
+
+.platform-osx .scroller_ef3116,
+.platform-win .scroller_ef3116 {
+  padding-top: 12px;
 }
 
 .theme-dark .themed_fc4f04 {
   background-color: var(--dark-primary);
 }
 
-.searchBar_f0963d .searchBarComponent_f0963d {
+.searchBar__35e86 .searchBarComponent_f0963d {
   border-radius: 10px;
 }
 
@@ -59,9 +80,10 @@
   background-color: var(--dark-secondary-alt);
 }
 
-.wrapper_fea3ef {
+.wrapper_ef3116 {
   background-color: var(--dark-secondary-alt);
   border-radius: 20px;
+  margin-right: 16px;
 }
 
 .theme-dark .themed_e44302,
@@ -72,15 +94,24 @@
   background-color: var(--dark-primary);
 }
 
-.sidebar_a4d4d9,
-.platform-win .sidebar_a4d4d9,
+.sidebar_c48ade,
+.platform-win .sidebar_c48ade,
 .layers_a01fb1,
 .applicationStore_cecc86 {
   border-radius: 20px;
 }
 
+.sidebar_c48ade {
+  margin-right: 16px;
+  background-color: var(--dark-secondary-alt);
+}
+
 .shop_e77fa3 {
   border-radius: 20px;
+  background-color: var(--dark-primary);
+}
+
+.theme-dark .themed__9293f {
   background-color: var(--dark-primary);
 }
 
@@ -93,7 +124,7 @@
   background-color: var(--roundmoled-background);
 }
 
-.appMount_ea7e65,
+.appMount__51fd7,
 .bg_d4b6c5 {
   background-color: var(--roundmoled-background);
 }
@@ -103,26 +134,26 @@
   gap: 0px;
 }
 
-.container_c2739c {
+.container__133bf {
   border-radius: 20px;
 }
 
-.chat_a7d72e {
+.chat_f75fb0 {
   border-radius: 20px;
 }
 
-.appAsidePanelWrapper_bd26cc {
+.appAsidePanelWrapper_a3002d {
   margin-top: 10px;
   margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-.searchBar_f0963d {
+.searchBar__35e86 {
   background-color: var(--dark-primary);
 }
 
-.theme-dark .scroller_c47fa9 {
+.theme-dark .scroller__99e7c {
   background-color: var(--dark-secondary-alt);
 }
 
@@ -317,7 +348,10 @@
 .theme-dark .footer-VCsJQY {
   box-shadow: none;
 }
-.uploadModal-2ie9O_ .inner-rBP-MS .file-163EuR.expandable-2-lrzP .description-2AJi-V {
+.uploadModal-2ie9O_
+  .inner-rBP-MS
+  .file-163EuR.expandable-2-lrzP
+  .description-2AJi-V {
   position: relative;
   margin-left: 50%;
   transform: translate(-50%);
@@ -335,7 +369,9 @@
   border-radius: 25px;
 }
 
-.uploadModal-2ie9O_ .footer-VCsJQY.hasSpoilers-33hwf_ .checkboxWrapper-2fDzaA:hover {
+.uploadModal-2ie9O_
+  .footer-VCsJQY.hasSpoilers-33hwf_
+  .checkboxWrapper-2fDzaA:hover {
   background-color: var(--dark-secondary);
   transition: 250ms ease-in-out;
 }
@@ -1314,7 +1350,7 @@ basesp
 /* background color*/
 :root .bg-1QIAus,
 .base-2jDfDU,
-.container-1NXEtd {
+.container_c48ade {
   background-color: var(--roundmoled-background);
 }
 
@@ -1484,7 +1520,8 @@ basesp
 
 /* Activity centered fix for biguserpopout*/
 
-.body-1Ukv50 .activityProfile-1712BN.userProfileActivity-sal5no.newProfileActivityStyles {
+.body-1Ukv50
+  .activityProfile-1712BN.userProfileActivity-sal5no.newProfileActivityStyles {
   left: 50%;
   top: 10%;
   width: 100%;
@@ -1493,7 +1530,8 @@ basesp
 
 .body-1Ukv50
   .button-TGAkj4.button-f2h6uQ.lookFilled-1Gx00P.colorGrey-2DXtkV.buttonSize-dIiz43.fullWidth-1orjjo.grow-q77ONN,
-.body-1Ukv50 .disabledButtonWrapper-3wH6-b.buttonSize-AQY2mE.grow-q77ONN.fullWidth-1orjjo,
+.body-1Ukv50
+  .disabledButtonWrapper-3wH6-b.buttonSize-AQY2mE.grow-q77ONN.fullWidth-1orjjo,
 .body-1Ukv50 .disabledButtonOverlay-2DA5FI,
 .body-1Ukv50
   .button-TGAkj4.button-f2h6uQ.lookFilled-1Gx00P.colorGrey-2DXtkV.buttonSize-AQY2mE.fullWidth-1orjjo.grow-q77ONN {
@@ -1648,6 +1686,10 @@ basesp
 
 .scroller-1ox3I2 {
   border-radius: 10px;
+}
+
+.platform-win .bg__960e4 {
+  top: 0px;
 }
 
 /* rounded corners in channel list and chat-member list */
@@ -1976,7 +2018,6 @@ button.gm-spotify-controls-button {
 .threadSuggestionBar-3ExSyc,
 .attachedBars-2BCP3l {
   background-color: var(--dark-primary);
-  background-color: var(--dark-secondary-alt);
   border-radius: 25px;
   margin-bottom: 3px;
 }
